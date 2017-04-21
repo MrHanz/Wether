@@ -14,7 +14,7 @@ class ForecastListAdapter(val items: List<String>) :
         return ViewHolder(TextView(parent.context))
     }
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.textView.text = items.position
+        holder.textView.text = items[position]
     }
 
     override fun getItemCount(): Int = items.size
